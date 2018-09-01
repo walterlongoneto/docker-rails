@@ -2,6 +2,8 @@
 
 Boostrap Rails project.
 
+Docker config with gems cache on volume.
+
 ### Installation
 
 Run:
