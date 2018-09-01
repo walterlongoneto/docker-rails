@@ -6,8 +6,15 @@ Docker config with gems cache on volume.
 
 ### Installation
 
-Run:
+Initialize Gemfile on src dir with:
+
+```ruby
+source 'https://rubygems.org'
+gem 'rails'
+```
+
+Run on src dir:
 
 ```sh
-$ docker-compose run web rails new src
+$ docker-compose run web rails new .
 ```
