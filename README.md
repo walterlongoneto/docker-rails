@@ -1,6 +1,6 @@
 # Docker Rails
 
-Boostrap Rails project.
+Bootstrap Rails project.
 
 Docker config with gems cache on volume.
 
