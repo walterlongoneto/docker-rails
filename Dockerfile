@@ -1,14 +1,20 @@
 FROM ruby:3.3.2-alpine
 
+# Install Node
 RUN apk add nodejs npm
+
+# Install build tools
 RUN apk add --virtual build-dependencies build-base
 
-ENV SOURCE_HOME .
+# Install git
+RUN apk add git
+
+ENV SOURCE_HOME ./src
 ENV APP_HOME /src
-RUN mkdir $APP_HOME
-WORKDIR $APP_HOME
 
 COPY $SOURCE_HOME $APP_HOME
+
+WORKDIR $APP_HOME
 
 # Add bundle entry point to handle bundle cache
 ENV BUNDLE_PATH=/bundle \
