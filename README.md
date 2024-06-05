@@ -16,5 +16,6 @@ gem 'rails'
 Run on src dir:
 
 ```sh
-$ docker-compose run web rails new .
+docker-compose run web bundle install
+docker-compose run web rails new .
 ```
